@@ -1,23 +1,177 @@
-.gradient-bg {
-    background: linear-gradient(to right, #bdc3c7, #2c3e50);
-    /* Replace the color codes with your desired gradient colors */
-    /* You can customize the gradient direction and colors as needed */
-  }
-
-body {
-    background: linear-gradient(to bottom, #bdc3c7, #2c3e50); /* Replace with your desired gradient colors */
-    background-attachment: fixed; /* Ensures the gradient covers the entire viewport */
-    margin: 0; /* Remove default body margin */
-    padding: 0; /* Remove default body padding */
-}
-footer {
-    display: flex;
-    justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-.inline {
-    display: inline;
+
+section{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url("Images/gaming.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+
+nav.navbar {
+    height: auto;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+
+nav.navbar .navbar-brand {
+    color: #eb7620;
+    font-size: 35px;
+    padding: 0;
     margin-right: 20px;
 }
 
-/* highlights */
+
+nav.navbar .navbar-brand img {
+    max-height: none;
+    width: 50px;
+    height: auto;
+}
+
+
+nav.navbar .navbar-toggler {
+    color: #eb7620;
+    border-color: #eb7620;
+}
+
+
+nav.navbar .navbar-nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 7px 15px;
+    margin: 0 5px;
+}
+
+
+nav.navbar .navbar-nav .nav-link.active {
+    background-color: #eb7620;
+    transition: background-color 0.5s ease;
+}
+
+
+nav.navbar .navbar-nav .nav-link:hover {
+    background-color: #eb7620;
+    transition: background-color 0.5s ease;
+    color: #fff;
+}
+
+
+
+nav.navbar .navbar-nav {
+    align-items: center;
+}
+
+
+nav.navbar .navbar-collapse {
+    justify-content: flex-end;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container h1,
+.container p {
+    color: #fff;
+}
+
+
+.container .btn {
+    color: #fff;
+    background-color: #777777;
+}
+
+
+.container .btn:hover {
+    background-color: #ff6b00;
+    transition: background-color 0.5s ease;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+footer p {
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+
+.carousel-container {
+    max-height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.transparent-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.transparent-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.transparent-form input[type="text"],
+.transparent-form input[type="email"],
+.transparent-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+.transparent-form textarea {
+    height: 100px;
+}
+
+
+.transparent-form input[type="submit"] {
+    background-color: #eb7620;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.transparent-form input[type="submit"]:hover {
+    background-color: #ff9900;
+}
